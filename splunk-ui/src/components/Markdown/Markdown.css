@@ -1,0 +1,12 @@
+.codeBlock {
+    background-color: $gray96;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.codeInline {
+    @mixin reset inline;
+
+    background-color: $gray93;
+    font-family: $monoFontFamily;
+}

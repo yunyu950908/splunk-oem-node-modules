@@ -1,0 +1,6 @@
+.main {
+    @mixin reset block;
+
+    font-family: $monoFontFamily;
+    white-space: pre;
+}

@@ -1,0 +1,42 @@
+{
+  "type": "sort",
+  "isComplete": true,
+  "spl": "sort -\"clientip\", -\"bytes\"",
+  "columns": [
+    {
+      "name": "_time",
+      "type": "timestamp",
+      "id": "078be266-0e50-409d-a7f1-febf8fdaa878"
+    },
+    {
+      "name": "bytes",
+      "type": "number",
+      "id": "e491e903-7c35-452b-ab8f-80ad22ee8c9a"
+    },
+    {
+      "name": "clientip",
+      "type": "ipv4",
+      "id": "59bd1205-0dc2-480e-ad1e-ab281f428746"
+    },
+    {
+      "name": "sourcetype",
+      "type": "string",
+      "id": "b626513a-efaa-49ba-a816-d415944e5090"
+    },
+    {
+      "name": "_raw",
+      "type": "raw",
+      "id": "c5e24d2c-da83-4ec8-b368-427170bbef15"
+    }
+  ],
+  "requiredColumns": [
+    {
+      "id": "59bd1205-0dc2-480e-ad1e-ab281f428746",
+      "order": "descending"
+    },
+    {
+      "id": "e491e903-7c35-452b-ab8f-80ad22ee8c9a",
+      "order": "descending"
+    }
+  ]
+}

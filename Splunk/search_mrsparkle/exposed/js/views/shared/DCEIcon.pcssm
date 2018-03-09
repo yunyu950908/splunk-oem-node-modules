@@ -1,0 +1,6 @@
+.view {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block
+}

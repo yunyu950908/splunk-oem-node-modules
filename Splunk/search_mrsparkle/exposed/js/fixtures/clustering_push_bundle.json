@@ -1,0 +1,103 @@
+{
+  "links": {
+    "_acl": "\/services\/cluster\/master\/bundle\/_acl"
+  },
+  "origin": "https:\/\/localhost:8000\/services\/cluster\/master\/bundle",
+  "updated": "2017-06-01T14:44:06-07:00",
+  "generator": {
+    "build": "533c54269fbf124b57c18698d9e2420f355d4c48",
+    "version": "20170519"
+  },
+  "entry": [
+    {
+      "name": "bundle",
+      "id": "https:\/\/localhost:8000\/services\/cluster\/master\/bundle\/bundle",
+      "updated": "1969-12-31T16:00:00-08:00",
+      "links": {
+        "alternate": "\/services\/cluster\/master\/bundle\/bundle",
+        "list": "\/services\/cluster\/master\/bundle\/bundle"
+      },
+      "author": "system",
+      "acl": {
+        "app": "",
+        "can_list": true,
+        "can_write": true,
+        "modifiable": false,
+        "owner": "system",
+        "perms": {
+          "read": [
+            "admin",
+            "splunk-system-role"
+          ],
+          "write": [
+            "admin",
+            "splunk-system-role"
+          ]
+        },
+        "removable": false,
+        "sharing": "system"
+      },
+      "fields": {
+        "required": [
+          
+        ],
+        "optional": [
+          
+        ],
+        "wildcard": [
+          
+        ]
+      },
+      "content": {
+        "active_bundle": {
+          "bundle_path": "\/Users\/claral\/gitmain\/splunk\/var\/run\/splunk\/cluster\/remote-bundle\/bb0696a48685a245bfc69070d0ea2ccd-1495230804.bundle",
+          "checksum": "618E5E739F31909A5D60B9E1D41CD939",
+          "timestamp": 1495230804
+        },
+        "apply_bundle_status": {
+          "invalid_bundle": {
+            "bundle_path": "",
+            "bundle_validation_errors_on_master": [
+              
+            ],
+            "checksum": "",
+            "timestamp": 0
+          },
+          "reload_bundle_issued": false,
+          "status": "None"
+        },
+        "eai:acl": null,
+        "last_dry_run_bundle": {
+          "bundle_path": "",
+          "checksum": "",
+          "timestamp": 0
+        },
+        "last_validated_bundle": {
+          "bundle_path": "\/Users\/claral\/gitmain\/splunk\/var\/run\/splunk\/cluster\/remote-bundle\/ddbedc7af88f47cafef0dd4d221bc861-1496351646.bundle",
+          "checksum": "618E5E739F31909A5D60B9E1D41CD939",
+          "is_valid_bundle": true,
+          "timestamp": 1496351646
+        },
+        "latest_bundle": {
+          "bundle_path": "\/Users\/claral\/gitmain\/splunk\/var\/run\/splunk\/cluster\/remote-bundle\/bb0696a48685a245bfc69070d0ea2ccd-1495230804.bundle",
+          "checksum": "618E5E739F31909A5D60B9E1D41CD939",
+          "timestamp": 1495230804
+        },
+        "previous_active_bundle": {
+          "bundle_path": "",
+          "checksum": "",
+          "timestamp": 0
+        },
+        "rolling_restart_flag": false
+      }
+    }
+  ],
+  "paging": {
+    "total": 1,
+    "perPage": 30,
+    "offset": 0
+  },
+  "messages": [
+    
+  ]
+}

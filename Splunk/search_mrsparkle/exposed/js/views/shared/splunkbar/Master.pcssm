@@ -1,0 +1,162 @@
+/*  Splunk Bar */
+/*  ======================= */
+@import '../../../../pcss/base/variables-oem.pcss';
+
+$backgroundHover:           #444;
+$backgroundActive:          #555;
+$backgroundFocus:           #666;
+
+$color:                     #bbb;
+$colorCaret:                $textGray;
+
+
+/*  Main Container */
+.view {
+    all: initial;
+    display: block;
+    min-width:750px;
+    height: $splunkbarHeight;
+    color: $textDisabledColor;
+    position:relative;
+    margin-bottom: 0;
+    background: $dce-black;
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
+    z-index: 3;
+}
+
+.devTest {
+    line-height: 25px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    background-color: $orange;
+    color: $white;
+    text-transform: uppercase;
+}
+
+/*  Nav */
+.nav {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: no-wrap;
+    display: flex;
+    flex-direction: row;
+    /* DCE-OEM-CHANGE
+    */
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+
+
+/* DCE-OEM-CHANGE
+*/
+.navRight {
+    composes: nav;
+    float: right;
+    border-left: 1px solid #424447;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 40px;
+    color: #fff;
+}
+
+.notificationRight {
+    composes: nav;
+    float: right;
+    border-left: 1px solid #424447;
+    height: 100%;
+    line-height: 40px;
+    color: #fff;
+}
+.notificationLink {
+    display: block;
+    padding: 0 15px;
+}
+
+.notificationLink:focus {
+    background: none;
+    box-shadow: none;
+}
+
+.navLeft {
+    composes: nav;
+    float: left;
+    border-right: 1px solid #424447;
+}
+
+/*  Nav Logo */
+.brand {
+    /* DCE-OEM-CHANGE
+    */
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+
+    padding: 0 10px; /*  can't use vertical padding since badges/labels push this out */
+    color: $color;
+    border-left: 0px solid transparent;
+
+    /* DCE-OEM-CHAGNE
+      border-right: 0px solid transparent;
+    */
+    border-right: 1px solid #424447;
+
+    line-height: 40px;
+    height: 40px;
+    white-space: nowrap;
+    display: block;
+    color: $white;
+
+    /* DCE-OEM-CHANGE
+      padding: 0 10px 0 20px;
+    */
+    padding: 0;
+
+    /* DCE-OEM-CHANGE
+      font-size: 17px;
+    */
+    font-size: 14px;
+
+    float: left;
+    text-decoration: none;
+    /* DCE-OEM-CHANGE
+    &:hover {
+        color: $white;
+        transition: background-color 0.3s linear;
+        background-color: $accent;
+    }
+    &:focus {
+        color: $white;
+        background: $accent;
+        outline: none;
+    }
+    */
+
+}
+
+.gt {
+    color: $splunkGray;
+}
+
+.icon {
+    margin-right: 6px;
+    vertical-align: middle;
+    font-size: 1.4em;
+}
+
+
+.productMenuLabelCloud,
+.helpMenuLabelCloud {
+  display: inline;
+}
+
+/* DCE-OEM-CHANGE */
+.dceLogo {
+    height: 18.5px;
+    padding: 0 10px;
+    vertical-align: middle;
+}

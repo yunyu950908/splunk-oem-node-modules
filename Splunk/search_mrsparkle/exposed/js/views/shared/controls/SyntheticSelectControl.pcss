@@ -1,0 +1,27 @@
+/* Capture all of the cases where a synthetic select control has a fixed width (as opposed to expanding to fit its text) */
+.shared-controls-syntheticselectcontrol {
+    /* when inside a justified form or a single-control block, but only when there are no siblings (excludes the appended/prepended input case) */
+    .form-justified &:only-child,
+    .controls-block &:only-child,
+    /* when part of a multi-control block */
+    .controls-halfblock &,
+    .controls-thirdblock &,
+    .controls-quarterblock & {
+
+        .dropdown-toggle {
+            .link-label {
+                max-width: calc(100% - 30px); /* Leave enough room for icon and caret */
+                text-overflow: ellipsis;
+                overflow: hidden;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            /* The only good way to detect when there is no visible icon.  The <i> tag will still be present in
+            the DOM, but will ONLY have the "icon-large" class (leading whitespace is intentional) */
+            [class=" icon-large"] + .link-label {
+                max-width: calc(100% - 15px); /* Leave enough room for the caret */
+            }
+        }
+    }
+}

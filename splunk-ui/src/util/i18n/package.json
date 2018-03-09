@@ -1,0 +1,4 @@
+{
+  "name": "Internationalization",
+  "main": "./i18n.js"
+}

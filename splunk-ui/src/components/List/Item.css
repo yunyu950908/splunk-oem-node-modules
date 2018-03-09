@@ -1,0 +1,6 @@
+.main {
+    @mixin reset list-item;
+
+    list-style-type: inherit;
+    line-height: 17px;
+}

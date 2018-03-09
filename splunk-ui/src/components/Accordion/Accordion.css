@@ -1,0 +1,6 @@
+.main {
+    @mixin reset block;
+
+    margin-bottom: 0;
+    background: $white;
+}

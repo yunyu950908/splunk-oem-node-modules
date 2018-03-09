@@ -1,0 +1,6 @@
+.main {
+    @mixin reset block;
+
+    margin-bottom: 1.3em;
+    line-height: 17px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Error Handling",
+  "main": "./errorHandling.js",
+  "private": true,
+  "stability": 1
+}

@@ -1,0 +1,187 @@
+{
+  "links": {
+    "create": "\/services\/cluster\/master\/peers\/_new",
+    "_acl": "\/services\/cluster\/master\/peers\/_acl"
+  },
+  "origin": "https:\/\/localhost:8000\/services\/cluster\/master\/peers",
+  "updated": "2017-06-01T14:44:06-07:00",
+  "generator": {
+    "build": "533c54269fbf124b57c18698d9e2420f355d4c48",
+    "version": "20170519"
+  },
+  "entry": [
+    {
+      "name": "228528CA-3ED4-4891-B04D-1ACC63FE46B9",
+      "id": "https:\/\/localhost:8000\/services\/cluster\/master\/peers\/228528CA-3ED4-4891-B04D-1ACC63FE46B9",
+      "updated": "1969-12-31T16:00:00-08:00",
+      "links": {
+        "alternate": "\/services\/cluster\/master\/peers\/228528CA-3ED4-4891-B04D-1ACC63FE46B9",
+        "list": "\/services\/cluster\/master\/peers\/228528CA-3ED4-4891-B04D-1ACC63FE46B9",
+        "edit": "\/services\/cluster\/master\/peers\/228528CA-3ED4-4891-B04D-1ACC63FE46B9"
+      },
+      "author": "system",
+      "acl": {
+        "app": "",
+        "can_list": true,
+        "can_write": true,
+        "modifiable": false,
+        "owner": "system",
+        "perms": {
+          "read": [
+            "admin",
+            "splunk-system-role"
+          ],
+          "write": [
+            "admin",
+            "splunk-system-role"
+          ]
+        },
+        "removable": false,
+        "sharing": "system"
+      },
+      "content": {
+        "active_bundle_id": "618E5E739F31909A5D60B9E1D41CD939",
+        "apply_bundle_status": {
+          "invalid_bundle": {
+            "bundle_validation_errors": [
+              
+            ],
+            "invalid_bundle_id": ""
+          },
+          "reasons_for_restart": [
+            
+          ],
+          "restart_required_for_apply_bundle": false,
+          "status": "None"
+        },
+        "eai:acl": null,
+        "is_valid_bundle": true,
+        "label": "claral-2MBP15-peer1",
+        "last_dry_run_bundle": "",
+        "last_validated_bundle": "618E5E739F31909A5D60B9E1D41CD939",
+        "latest_bundle_id": "618E5E739F31909A5D60B9E1D41CD939",
+        "peer_status": "Up",
+        "restart_required_for_applying_dry_run_bundle": false,
+        "site": "default"
+      }
+    },
+    {
+      "name": "26912F9A-D79F-4918-8426-77035F4B38F8",
+      "id": "https:\/\/localhost:8000\/services\/cluster\/master\/peers\/26912F9A-D79F-4918-8426-77035F4B38F8",
+      "updated": "1969-12-31T16:00:00-08:00",
+      "links": {
+        "alternate": "\/services\/cluster\/master\/peers\/26912F9A-D79F-4918-8426-77035F4B38F8",
+        "list": "\/services\/cluster\/master\/peers\/26912F9A-D79F-4918-8426-77035F4B38F8",
+        "edit": "\/services\/cluster\/master\/peers\/26912F9A-D79F-4918-8426-77035F4B38F8"
+      },
+      "author": "system",
+      "acl": {
+        "app": "",
+        "can_list": true,
+        "can_write": true,
+        "modifiable": false,
+        "owner": "system",
+        "perms": {
+          "read": [
+            "admin",
+            "splunk-system-role"
+          ],
+          "write": [
+            "admin",
+            "splunk-system-role"
+          ]
+        },
+        "removable": false,
+        "sharing": "system"
+      },
+      "content": {
+        "active_bundle_id": "618E5E739F31909A5D60B9E1D41CD939",
+        "apply_bundle_status": {
+          "invalid_bundle": {
+            "bundle_validation_errors": [
+              
+            ],
+            "invalid_bundle_id": ""
+          },
+          "reasons_for_restart": [
+            
+          ],
+          "restart_required_for_apply_bundle": false,
+          "status": "None"
+        },
+        "eai:acl": null,
+        "is_valid_bundle": true,
+        "label": "claral-2MBP15-peer3",
+        "last_dry_run_bundle": "",
+        "last_validated_bundle": "618E5E739F31909A5D60B9E1D41CD939",
+        "latest_bundle_id": "618E5E739F31909A5D60B9E1D41CD939",
+        "peer_status": "Up",
+        "restart_required_for_applying_dry_run_bundle": false,
+        "site": "default"
+      }
+    },
+    {
+      "name": "53F240FE-EFB0-4661-96F8-91D872671837",
+      "id": "https:\/\/localhost:8000\/services\/cluster\/master\/peers\/53F240FE-EFB0-4661-96F8-91D872671837",
+      "updated": "1969-12-31T16:00:00-08:00",
+      "links": {
+        "alternate": "\/services\/cluster\/master\/peers\/53F240FE-EFB0-4661-96F8-91D872671837",
+        "list": "\/services\/cluster\/master\/peers\/53F240FE-EFB0-4661-96F8-91D872671837",
+        "edit": "\/services\/cluster\/master\/peers\/53F240FE-EFB0-4661-96F8-91D872671837"
+      },
+      "author": "system",
+      "acl": {
+        "app": "",
+        "can_list": true,
+        "can_write": true,
+        "modifiable": false,
+        "owner": "system",
+        "perms": {
+          "read": [
+            "admin",
+            "splunk-system-role"
+          ],
+          "write": [
+            "admin",
+            "splunk-system-role"
+          ]
+        },
+        "removable": false,
+        "sharing": "system"
+      },
+      "content": {
+        "active_bundle_id": "618E5E739F31909A5D60B9E1D41CD939",
+        "apply_bundle_status": {
+          "invalid_bundle": {
+            "bundle_validation_errors": [
+              
+            ],
+            "invalid_bundle_id": ""
+          },
+          "reasons_for_restart": [
+            
+          ],
+          "restart_required_for_apply_bundle": false,
+          "status": "None"
+        },
+        "eai:acl": null,
+        "is_valid_bundle": true,
+        "label": "claral-2MBP15-peer2",
+        "last_dry_run_bundle": "",
+        "last_validated_bundle": "618E5E739F31909A5D60B9E1D41CD939",
+        "latest_bundle_id": "618E5E739F31909A5D60B9E1D41CD939",
+        "peer_status": "Up",
+        "restart_required_for_applying_dry_run_bundle": false,
+        "site": "default"
+      }
+    }
+  ],
+  "paging": {
+    "total": 3,
+    "perPage": 30,
+    "offset": 0
+  },
+  "messages": [
+    
+  ]
+}

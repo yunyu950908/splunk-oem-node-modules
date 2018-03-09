@@ -1,0 +1,15 @@
+.open {
+    @mixin reset block;
+}
+
+.notOpen {
+    composes: open;
+    overflow: hidden;
+}
+
+.inner {
+    @mixin reset table;
+    @mixin clearfix;
+
+    width: 100%;
+}

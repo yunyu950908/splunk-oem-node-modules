@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+
+require('webdriverio/build/lib/cli.js');

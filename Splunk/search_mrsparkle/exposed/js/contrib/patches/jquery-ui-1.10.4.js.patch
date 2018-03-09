@@ -1,0 +1,20 @@
+--- jquery-ui-1.10.4.js	2017-08-07 12:57:08.000000000 -0700
++++ patches/jquery-ui-1.10.4.js.org	2017-08-08 10:19:31.000000000 -0700
+@@ -9181,7 +9181,7 @@
+ 		// dialog in IE (#9312)
+ 		this.uiDialogTitlebarClose = $( "<button type='button'></button>" )
+ 			.button({
+-				label: $( "<a>" ).text( this.options.closeText ).html(),
++				label: this.options.closeText,
+ 				icons: {
+ 					primary: "ui-icon-closethick"
+ 				},
+@@ -9419,7 +9419,7 @@
+ 		if ( key === "closeText" ) {
+ 			this.uiDialogTitlebarClose.button({
+ 				// Ensure that we always pass a string
+-				label: $( "<a>" ).text( "" + this.options.closeText ).html()
++				label: "" + value
+ 			});
+ 		}
+ 

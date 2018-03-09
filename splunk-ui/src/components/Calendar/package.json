@@ -1,0 +1,5 @@
+{
+    "name": "Calendar",
+    "main": "./Calendar.jsx",
+    "private": true
+}

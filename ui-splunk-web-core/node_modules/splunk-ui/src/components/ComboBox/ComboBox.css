@@ -1,0 +1,7 @@
+.menu {
+    overflow: auto;
+}
+
+.activeOption {
+    background-color: $backgroundColorFocusTransparent;
+}

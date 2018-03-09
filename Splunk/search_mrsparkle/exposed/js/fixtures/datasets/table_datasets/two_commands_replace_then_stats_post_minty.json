@@ -1,0 +1,108 @@
+{
+    "links": {
+        "create": "/servicesNS/admin/search/datamodel/model/_new",
+        "_reload": "/servicesNS/admin/search/datamodel/model/_reload",
+        "_acl": "/servicesNS/admin/search/datamodel/model/_acl"
+    },
+    "origin": "https://putney.sv.splunk.com:8000/servicesNS/admin/search/datamodel/model",
+    "updated": "2017-03-15T12:37:52-07:00",
+    "generator": {
+        "build": "3da4bba9b6f0f7b417be28471e561334f72184bc",
+        "version": "20170313"
+    },
+    "entry": [
+        {
+            "name": "test_with_stats_command",
+            "id": "https://putney.sv.splunk.com:8000/servicesNS/admin/search/datamodel/model/test_with_stats_command",
+            "updated": "2017-03-15T12:37:49-07:00",
+            "links": {
+                "alternate": "/servicesNS/admin/search/datamodel/model/test_with_stats_command",
+                "list": "/servicesNS/admin/search/datamodel/model/test_with_stats_command",
+                "_reload": "/servicesNS/admin/search/datamodel/model/test_with_stats_command/_reload",
+                "edit": "/servicesNS/admin/search/datamodel/model/test_with_stats_command",
+                "remove": "/servicesNS/admin/search/datamodel/model/test_with_stats_command",
+                "move": "/servicesNS/admin/search/datamodel/model/test_with_stats_command/move",
+                "disable": "/servicesNS/admin/search/datamodel/model/test_with_stats_command/disable"
+            },
+            "author": "admin",
+            "acl": {
+                "app": "search",
+                "can_change_perms": true,
+                "can_list": true,
+                "can_share_app": true,
+                "can_share_global": true,
+                "can_share_user": true,
+                "can_write": true,
+                "modifiable": true,
+                "owner": "admin",
+                "perms": null,
+                "removable": true,
+                "sharing": "user"
+            },
+            "fields": {
+                "required": [],
+                "optional": [
+                    "acceleration",
+                    "acceleration.backfill_time",
+                    "acceleration.cron_schedule",
+                    "acceleration.earliest_time",
+                    "acceleration.hunk.compression_codec",
+                    "acceleration.hunk.dfs_block_size",
+                    "acceleration.hunk.file_format",
+                    "acceleration.manual_rebuilds",
+                    "acceleration.max_concurrent",
+                    "acceleration.max_time",
+                    "acceleration.poll_buckets_until_maxtime",
+                    "acceleration.schedule_priority",
+                    "concise",
+                    "dataset.commands",
+                    "dataset.description",
+                    "dataset.display.currentCommand",
+                    "dataset.display.datasummary.earliestTime",
+                    "dataset.display.datasummary.latestTime",
+                    "dataset.display.diversity",
+                    "dataset.display.limiting",
+                    "dataset.display.mode",
+                    "dataset.display.sample_ratio",
+                    "dataset.fields",
+                    "dataset.type",
+                    "digest",
+                    "displayName",
+                    "provisional",
+                    "search"
+                ],
+                "wildcard": []
+            },
+            "content": {
+                "acceleration": "{\"enabled\":false,\"earliest_time\":\"\",\"cron_schedule\":\"*/5 * * * *\",\"max_time\":3600,\"backfill_time\":\"\",\"manual_rebuilds\":false,\"poll_buckets_until_maxtime\":false,\"max_concurrent\":2,\"schedule_priority\":\"default\",\"hunk.file_format\":\"\",\"hunk.dfs_block_size\":0,\"hunk.compression_codec\":\"\"}",
+                "acceleration.allowed": false,
+                "acceleration.hunk.compression_codec": "",
+                "dataset.commands": "[{\"type\":\"initialdata\",\"isComplete\":true,\"selectedMethod\":\"indexes_and_sourcetypes\",\"spl\":\"((index=\\\"_internal\\\") (sourcetype=\\\"splunk_web_access\\\")) | fields \\\"_time\\\", \\\"method\\\", \\\"_raw\\\"\",\"columns\":[{\"name\":\"_time\",\"type\":\"timestamp\",\"id\":\"4ab64803-a855-40cd-97b1-219cb6168bf4\"},{\"name\":\"method\",\"type\":\"string\",\"id\":\"f52a42cd-a864-4d0d-bb32-7ed29f58342e\"},{\"name\":\"_raw\",\"type\":\"raw\",\"id\":\"48f1dbd0-12a2-4615-9302-048406ce4b95\"}],\"requiredColumns\":[],\"editorValues\":[{\"index\":\"_internal\",\"sourcetypes\":[\"splunk_web_access\"]}]},{\"type\":\"replace\",\"isComplete\":true,\"spl\":\"replace \\\"GET\\\" with \\\"GET200\\\" in \\\"method\\\"\",\"columns\":[{\"name\":\"_time\",\"type\":\"timestamp\",\"id\":\"4ab64803-a855-40cd-97b1-219cb6168bf4\"},{\"name\":\"method\",\"type\":\"string\",\"id\":\"f52a42cd-a864-4d0d-bb32-7ed29f58342e\"},{\"name\":\"_raw\",\"type\":\"raw\",\"id\":\"48f1dbd0-12a2-4615-9302-048406ce4b95\"}],\"requiredColumns\":[{\"id\":\"f52a42cd-a864-4d0d-bb32-7ed29f58342e\"}],\"editorValues\":[{\"oldValue\":\"GET\",\"newValue\":\"GET200\"}]},{\"type\":\"stats\",\"rowCount\":true,\"isComplete\":true,\"spl\":\"stats count by method\",\"columns\":[{\"id\":\"96ca9819-c5a4-4610-8fa8-cebb08e8ed67\",\"name\":\"method\",\"type\":\"string\",\"originatingColumnGuid\":\"f52a42cd-a864-4d0d-bb32-7ed29f58342e\"},{\"id\":\"604e14cc-f64e-4164-a869-819cecc7b921\",\"name\":\"count\",\"type\":\"number\"}],\"requiredColumns\":[{\"id\":\"f52a42cd-a864-4d0d-bb32-7ed29f58342e\"}],\"editorValues\":[{\"columnGuid\":\"f52a42cd-a864-4d0d-bb32-7ed29f58342e\"}],\"aggregates\":[]}]",
+                "dataset.description": "",
+                "dataset.display.currentCommand": "2",
+                "dataset.display.datasummary.earliestTime": "",
+                "dataset.display.datasummary.latestTime": "",
+                "dataset.display.diversity": "latest",
+                "dataset.display.limiting": "100000",
+                "dataset.display.mode": "table",
+                "dataset.display.sample_ratio": "1",
+                "dataset.fields": "[{\"name\":\"count\"},{\"name\":\"method\"}]",
+                "dataset.type": "table",
+                "description": "{\"modelName\":\"test_with_stats_command\",\"displayName\":\"test_with_stats_command\",\"description\":\"\",\"objectSummary\":{\"Event-Based\":0,\"Transaction-Based\":0,\"Search-Based\":1},\"objects\":[{\"objectName\":\"RootObject\",\"displayName\":\"test_with_stats_command\",\"parentName\":\"BaseSearch\",\"fields\":[{\"fieldName\":\"method\",\"owner\":\"RootObject\",\"type\":\"string\",\"fieldSearch\":\"\",\"required\":false,\"multivalue\":false,\"hidden\":false,\"editable\":false,\"displayName\":\"method\",\"comment\":\"\"},{\"fieldName\":\"count\",\"owner\":\"RootObject\",\"type\":\"number\",\"fieldSearch\":\"\",\"required\":false,\"multivalue\":false,\"hidden\":false,\"editable\":false,\"displayName\":\"count\",\"comment\":\"\"},{\"fieldName\":\"RootObject\",\"owner\":\"RootObject\",\"type\":\"objectCount\",\"fieldSearch\":\"\",\"required\":false,\"multivalue\":false,\"hidden\":false,\"editable\":false,\"displayName\":\"test_with_stats_command\",\"comment\":\"\"}],\"calculations\":[],\"constraints\":[],\"lineage\":\"RootObject\",\"objectSearchNoFields\":\"| search (index=* OR index=_*) ((index=\\\"_internal\\\") (sourcetype=\\\"splunk_web_access\\\")) | fields \\\"_time\\\", \\\"method\\\", \\\"_raw\\\" | replace \\\"GET\\\" with \\\"GET200\\\" in \\\"method\\\" | stats count by method  \",\"objectSearch\":\"| search (index=* OR index=_*) ((index=\\\"_internal\\\") (sourcetype=\\\"splunk_web_access\\\")) | fields \\\"_time\\\", \\\"method\\\", \\\"_raw\\\" | replace \\\"GET\\\" with \\\"GET200\\\" in \\\"method\\\" | stats count by method   | rename method AS RootObject.method count AS RootObject.count | fields RootObject.method, RootObject.count, RootObject\",\"autoextractSearch\":\"| search (index=* OR index=_*) ((index=\\\"_internal\\\") (sourcetype=\\\"splunk_web_access\\\")) | fields \\\"_time\\\", \\\"method\\\", \\\"_raw\\\" | replace \\\"GET\\\" with \\\"GET200\\\" in \\\"method\\\" | stats count by method \",\"previewSearch\":\"| search (index=* OR index=_*) ((index=\\\"_internal\\\") (sourcetype=\\\"splunk_web_access\\\")) | fields \\\"_time\\\", \\\"method\\\", \\\"_raw\\\" | replace \\\"GET\\\" with \\\"GET200\\\" in \\\"method\\\" | stats count by method  \",\"baseSearch\":\"((index=\\\"_internal\\\") (sourcetype=\\\"splunk_web_access\\\")) | fields \\\"_time\\\", \\\"method\\\", \\\"_raw\\\" | replace \\\"GET\\\" with \\\"GET200\\\" in \\\"method\\\" | stats count by method\",\"tsidxNamespace\":\"\"}],\"objectNameList\":[\"RootObject\"]}",
+                "disabled": false,
+                "displayName": "test_with_stats_command",
+                "eai:acl": null,
+                "eai:appName": "search",
+                "eai:digest": "3f5467eab582e4647fc548aeeb4e5488",
+                "eai:type": "datamodel",
+                "eai:userName": "admin"
+            }
+        }
+    ],
+    "paging": {
+        "total": 1,
+        "perPage": 30,
+        "offset": 0
+    },
+    "messages": []
+}

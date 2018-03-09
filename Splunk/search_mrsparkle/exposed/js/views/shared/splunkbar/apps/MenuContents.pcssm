@@ -1,0 +1,36 @@
+$dce-menu-bg: #1f2126;
+.view {
+    composes: body from "../../DCEMenuDialog.pcssm";
+    /* DCE-OEM-CHANGE */
+    background-color: $dce-menu-bg;
+    border-radius: 0 0 5px 5px;
+    opacity: .94;
+    min-width: 160px;
+}
+
+.appsList {
+    composes: menuSelectable from '../../DCEMenuDialog.pcssm';
+    max-height: calc(100vh - 120px);
+    /* DCE-OEM-CHANGE */
+    background-color: $dce-menu-bg;
+}
+
+.menu {
+    composes: menuSelectable from "../../DCEMenuDialog.pcssm";
+}
+
+.label {
+    padding-right: 30px;
+}
+
+.icon {
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+}
+
+
+.selected {
+    composes: selected from "../../DCEMenuDialog.pcssm";
+}

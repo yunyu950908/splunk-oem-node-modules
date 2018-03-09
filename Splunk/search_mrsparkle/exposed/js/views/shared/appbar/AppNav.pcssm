@@ -1,0 +1,40 @@
+@import '../../../../pcss/base/variables-oem.pcss';
+
+.view {
+    float: left;
+    margin-top: $splunkbarHeight;
+    position: relative;
+
+    /* DCE-OEM-CHANGE */
+    width: 100%;
+}
+
+.blank-gap {
+  display: inline-block;
+  height: 15px;
+}
+
+.section-title {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: $dce-black-light;
+    padding: 2px 0 2px 10px;
+    margin: 0;
+    margin-top: 6px;
+    height: 24px;
+    font-weight: 500;
+
+    /* DCE-OEM-CHANGE */
+    box-sizing: border-box;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.divider {
+    display: inline-block;
+    height: 10px;
+    margin: 0 15px;
+    opacity: 0.2;
+}
